@@ -1,8 +1,7 @@
-Flask
+flask
 numpy
 Pillow
-tensorflow-cpu
+tensorflow
 werkzeug
-urllib3
-protobuf
+os
 streamlit
