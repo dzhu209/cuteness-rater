@@ -1,6 +1,6 @@
 flask
 numpy
 tensorflow
-streamlit == 1.23.1
+streamlit==1.22.0
 urllib3<2.0
-protobuf<5,>=3.20
+protobuf==3.19.6
