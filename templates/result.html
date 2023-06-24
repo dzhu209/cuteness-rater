@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+</head>
+<body>
+    <h1>Cuteness</h1>
+    
+    {% if prediction_rater < 10 %}
+        <img src="{{ url_for('static', filename='star1.png') }}" alt="Star 1">
+    {% elif prediction_rater >= 10 and prediction_rater < 30 %}
+        <img src="{{ url_for('static', filename='star2.png') }}" alt="Star 2">
+    {% elif prediction_rater >= 30 and prediction_rater < 50 %}
+        <img src="{{ url_for('static', filename='star3.png') }}" alt="Star 3">
+    {% elif prediction_rater >= 50 and prediction_rater < 70 %}
+        <img src="{{ url_for('static', filename='star4.png') }}" alt="Star 4">
+    {% else %}
+        <img src="{{ url_for('static', filename='star5.png') }}" alt="Star 5">
+    {% endif %}
+
+    <h2>Recommendations</h2>
+    {% if prediction_focus < 0.5 %}
+        <p>Subject Focus: Consider to improve concentration!</p>
+    {% else %}
+        <p>Subject Focus: pretty good!</p>
+    {% endif %}
+
+    {% if prediction_eye < 0.5 %}
+    <p>Eyes: consider to enhance eyes! </p>
+    {% else %}
+    <p>Eyes: She/he has pretty eyes!</p>
+    {% endif %}
+
+    {% if prediction_face < 0.5 %}
+    <p>Face: Show a bit more of his/her pretty face. </p>
+    {% else %}
+    <p>Face: She/he has a pretty face!</p>
+    {% endif %}
+
+    {% if prediction_near < 0.5 %}
+    <p>Near: Move your camera a bit closer. </p>
+    {% else %}
+    <p>Near: The distance is perfect! </p>
+    {% endif %}
+
+    {% if prediction_action < 0.5 %}
+    <p>Action: Consider to capture his/her action. </p>
+    {% else %}
+    <p>Action: She/He action is so cute! </p>
+    {% endif %}
+
+    {% if prediction_accessory < 0.5 %}
+    <p>Accessory: Adding some accessory can usually enhance your clicks. </p>
+    {% else %}
+    <p>Accessory: Her/his is so cute! </p>
+    {% endif %}
+
+    {% if prediction_occlusion < 0.5 %}
+    <p>Occlusion: Great job! No blocks in front of the pet. </p>
+    {% else %}
+    <p>Occlusion: Consider remove any blocks. </p>
+    {% endif %}
+
+    {% if prediction_blur < 0.5 %}
+    <p>Blur: Great job! The photo seems pretty clear! </p>
+    {% else %}
+    <p>Blur: The photo seems a bit blur, please enhance the clearness. </p>
+    {% endif %}
+    
+</body>
+</html>
