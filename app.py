@@ -101,17 +101,11 @@ def upload_predict():
         prediction_blur = blur_model.predict(img_array)
 
         # Return the prediction result
-        return redirect(url_for('show_result', prediction_rater=prediction_rater, prediction_focus=prediction_focus, prediction_eye=prediction_eye,prediction_face=prediction_face, prediction_near=prediction_near, prediction_action=prediction_action, prediction_accessory=prediction_accessory, prediction_occlusion=prediction_occlusion,prediction_blur=prediction_blur)
+        return render_template('result.html', prediction_rater=prediction_rater, prediction_focus=prediction_focus, prediction_eye=prediction_eye,prediction_face=prediction_face, prediction_near=prediction_near, prediction_action=prediction_action, prediction_accessory=prediction_accessory, prediction_occlusion=prediction_occlusion,prediction_blur=prediction_blur)
         
     return render_template('index.html')
 
-@app.route('/result', methods=['GET'])
-def show_result():
-    # Add any necessary logic or data processing here
-    return render_template('result.html')
-
 if __name__ == '__main__':
     app.run(debug=True)
-
 
 
