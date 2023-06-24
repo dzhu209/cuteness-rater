@@ -1,11 +1,2 @@
-flask
-numpy~=1.23.0
-Pillow
-tensorflow~=2.12.0
-keras~=2.12.0
-protobuf~=3.20.3
-tensorboard~=2.12.0
-tensorflow-estimator~=2.12.0
-wrapt~=1.12.0
-werkzeug
+Flask
 streamlit
