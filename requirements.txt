@@ -1,4 +1,4 @@
 flask
-numpy==1.23.3
+numpy
 tensorflow
-streamlit
+streamlit == 1.23.1
