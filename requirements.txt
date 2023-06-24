@@ -1,5 +1,4 @@
 flask
-numpy
 tensorflow==2.11.0
 streamlit==1.22.0
 urllib3<2.0
