@@ -105,6 +105,15 @@ def upload_predict():
         
     return render_template('index.html')
 
+@app.route('/result', methods=['GET'])
+def show_result():
+    # Retrieve the necessary data or results to display on the result.html page
+    # ...
+    # Replace this with your code to retrieve the necessary data or results
+
+    # Render the result.html page with the required data or results
+    return render_template('result.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
 
