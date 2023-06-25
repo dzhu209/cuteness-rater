@@ -44,7 +44,7 @@ def main():
     st.title("Welcome to the pet photo cuteness rater!")
 
     # Inserting the home image
-    home_image_path = "web_image/Picture_home.jpg"
+    home_image_path = "static/Picture_home.jpg"
     st.image(home_image_path, use_column_width=True)
 
     uploaded_file = st.file_uploader("Upload an image", type=["jpg", "jpeg", "png"])
@@ -139,10 +139,10 @@ def main():
     st.markdown("## Below are some images you can download and upload to try the tool:")
 
     image_paths = [
-        "web_image/0a3faad2084666073e567516f0cc3ae5.jpg",
-        "web_image/0a21bc46d78381dd90cc6ccb504ee064.jpg",
-        "web_image/0a420bbb004235d2cd22ca0f068c3ae9.jpg",
-        "web_image/0aa9b55eb2facee280cf1c620b5cd460.jpg"
+        "static/0a3faad2084666073e567516f0cc3ae5.jpg",
+        "static/0a21bc46d78381dd90cc6ccb504ee064.jpg",
+        "static/0a420bbb004235d2cd22ca0f068c3ae9.jpg",
+        "static/0aa9b55eb2facee280cf1c620b5cd460.jpg"
     ]
 
     # Display the images in a single line
