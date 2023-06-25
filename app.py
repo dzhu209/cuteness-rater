@@ -75,15 +75,15 @@ def main():
 
             if model_name == "rater":
                 if prediction_value < 10:
-                    star_image_path = "web_image/star1.png"
+                    star_image_path = "static/star1.png"
                 elif prediction_value < 30:
-                    star_image_path = "web_image/star2.png"
+                    star_image_path = "static/star2.png"
                 elif prediction_value < 50:
-                    star_image_path = "web_image/star3.png"
+                    star_image_path = "static/star3.png"
                 elif prediction_value < 70:
-                    star_image_path = "web_image/star4.png"
+                    star_image_path = "static/star4.png"
                 else:
-                    star_image_path = "web_image/star5.png"
+                    star_image_path = "static/star5.png"
                 st.image(star_image_path, use_column_width=True)
 
             elif model_name == "focus":
