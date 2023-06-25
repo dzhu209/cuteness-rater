@@ -101,10 +101,10 @@ def upload_predict():
         prediction_occlusion = occlusion_model.predict(img_array)
         prediction_blur = blur_model.predict(img_array)
 
-    # Render the index.html page with the prediction result
-    return render_template('result.html', prediction_rater=prediction_rater, prediction_focus=prediction_focus, prediction_eye=prediction_eye, prediction_face=prediction_face, prediction_near=prediction_near, prediction_action=prediction_action, prediction_accessory=prediction_accessory, prediction_occlusion=prediction_occlusion, prediction_blur=prediction_blur)
+        # Render the index.html page with the prediction result
+        return render_template('result.html', prediction_rater=prediction_rater, prediction_focus=prediction_focus, prediction_eye=prediction_eye, prediction_face=prediction_face, prediction_near=prediction_near, prediction_action=prediction_action, prediction_accessory=prediction_accessory, prediction_occlusion=prediction_occlusion, prediction_blur=prediction_blur)
 
-return render_template('index.html')
+    return render_template('index.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
