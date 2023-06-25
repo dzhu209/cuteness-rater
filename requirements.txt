@@ -4,3 +4,4 @@ numpy
 gunicorn
 urllib3<2.0
 Pillow
+PyTorch
